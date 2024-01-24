@@ -1,0 +1,68 @@
+<!-- Customer Satisfaction Survey Form -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+
+    <h1 id="title">Customer Satisfaction Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve!</p>
+
+    <form id="survey-form">
+
+      <fieldset>
+        <label id="name-label" for="name">Name <input id="name" name="first-name" type="text" placeholder="Enter your name" required /></label>
+        <label id="email-label" for="email">Email <input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+        <label id="number-label" for="number">Age <input id="number" type="number" name="age" min="10" max="99" placeholder="Age"/></label>
+        <label for="dropdown">Which option best describes your experience?
+            <select id="dropdown" name="experience">
+              <option value="">(select one)</option>
+              <option value="1">Bad</option>
+              <option value="2">Decent</option>
+              <option value="3">Great</option>
+              <option value="4">Excellent</option>
+            </select>
+          </label>
+      </fieldset>
+
+      <fieldset>
+        <label>Would you recommend this place to a friend?</label>
+        <label for="yes-radio"><input id="yes-radio" type="radio" name="recommend" class="inline" value="yes" checked /> Yes</label>
+        <label for="no-radio"><input id="no-radio" type="radio" name="recommend" class="inline"  value="no"/> No</label>
+
+        <label>What could use improvement?</label>
+        <label for="customer-service">
+          <input class="inline" id="customer-service" type="checkbox" name="improvements" value="service" checked> Customer Service
+        </label>
+
+        <label for="stock">
+          <input class="inline" id="stock" type="checkbox" name="improvements" value="stock"> Available inventory
+        </label>
+
+        <label for="hygiene">
+          <input class="inline" id="hygiene" type="checkbox" name="improvements" value="hygiene"> Hygiene
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="bio">Additional Comments:
+          <textarea id="bio" name="bio" rows="3" cols="30" ></textarea>
+        </label>
+      </fieldset>
+
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="submitted"/> I accept the <a target=”_blank href="https://www.linkedin.com/in/eteodosi/">terms and conditions :D</a>
+      </label>
+      <input id="submit" type="submit" value="Submit" />
+
+    </form>
+
+  </body>
+
+</html>
