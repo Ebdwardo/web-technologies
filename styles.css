@@ -1,66 +1,68 @@
-body{
+body {
+    width: 100%;
+    height: 100vh;
     margin: 0;
-    background-color: #552583;
-    color: #FDB927;
+    background-color: #242582;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+  
+form {
+    width: 60vw;
+    max-width: 700px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline {
+  /* removes previous width adjustment from above rule */
+  width: unset;
+  margin: 0 0.5em 0 0;
+
+  /* makes it so radio buttion are inlign with text */
+  vertical-align: middle;
+}
+
+.inline{
+  display: inline; 
 }
 
 a {
-    color: #FDB927;
-}
-a:hover{
-    color: white;
-}
-
-header h1{
-    font-weight: 900;
-}
-
-header {
-    text-align: center;
-    border-bottom: 4px solid #FDB927;
-}
-
-#img-div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 20px 10px;
-}
-
-#img-div img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-section {
-    text-align:center;
-    width: 80%;
-    margin: 0 auto 10px auto;
-    max-width: 700px;
-}
-
-.list-title{
-    padding-bottom: 10px;
-}
-
-section> ul{
-    display: inline-block;
-}
-
-li{
-    font-size: 25px;
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-.bold{
-    font-weight:800;
+  color: #dfdfe2
 }
