@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Code Snippet Library</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <main id="main-doc">
+
+        <nav id="navbar">
+            <header>Code Snippet Library</header>
+            <ul>
+                <li><a class="nav-link" href="#HTML_Snippets" accesskey="h">HTML Snippets</a></li>
+                <li><a class="nav-link" href="#CSS_Snippets" accesskey="c">CSS Snippets</a></li>
+                <li><a class="nav-link" href="#Java_Snippets" accesskey="j">Java Snippets</a></li>
+                <li><a class="nav-link" href="#Javascript_Snippets" accesskey="js">Javascript Snippets</a></li>
+                <li><a class="nav-link" href="#Python_Snippets" accesskey="p">Python Snippets</a></li>
+            </ul>
+        </nav>
+
+        <section class="main-section" id="HTML_Snippets">
+            <header id="header">
+                <h2>HTML Snippets</h2>
+            </header>
+
+            <p>Explore essential HTML code snippets:</p>
+            <p>Starter code for hmtl doc</p>
+            <pre>
+                <code>
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html lang="en"&gt;
+                  &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;title&gt;My Web Page&lt;/title&gt;
+                  &lt;/head&gt;
+                  &lt;body&gt;
+                    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+                  &lt;/body&gt;
+                  &lt;/html&gt;
+                </code>
+              </pre>
+
+        </section>
+
+        <section class="main-section" id="CSS_Snippets">
+            <header id="header">
+                <h2>CSS Snippets</h2>
+            </header>
+
+            <p>Check out some handy CSS snippets:</p>
+            <p>Basic styling in CSS</p>
+            <pre>
+                <code>
+                  body {
+                    font-family: 'Arial', sans-serif;
+                    background-color: #f4f4f4;
+                  }
+        
+                  h1 {
+                    color: #3498db;
+                  }
+                </code>
+            </pre>
+
+        </section>
+
+        <section class="main-section" id="Java_Snippets">
+            <header id="header">
+                <h2>Java Snippets</h2>
+            </header>
+
+            <p>Check out some handy Java snippets:</p>
+
+            <ul>
+                <li>
+                    <p>Converting Strings to int and int to String</p>
+                    <pre>
+                        <code>
+                            String a = String.valueOf(2);   //integer to numeric string
+                            int i = Integer.parseInt(a);
+                        </code>
+                    </pre>
+                </li>
+                <li>
+                    <p>Get name of current method in Java</p>
+                    <pre>
+                        <code>
+                            String methodName = Thread.currentThread().getStackTrace()[1].getMethodName();
+                        </code>
+                    </pre>
+                </li>
+                <li>
+                    <p>Convert Java util.Date to sql.java</p>
+                    <pre>
+                        <code>
+                            java.util.Date utilDate = new java.util.Date();
+                            java.sql.Date sqlDate = new java.sql.Date(utilDate.getTime());
+                        </code>
+                    </pre>
+                </li>
+                <li>
+                    <p>HTTP Proxy setting in Java.java</p>
+                    <pre>
+                        <code>
+                            System.getProperties().put("http.proxyHost", "someProxyURL");
+                            System.getProperties().put("http.proxyPort", "someProxyPort");
+                            System.getProperties().put("http.proxyUser", "someUserName");
+                            System.getProperties().put("http.proxyPassword", "somePassword");   
+                        </code>
+                    </pre>
+                </li>
+                <li>
+                    <p>Convert String to Date in Java</p>
+                    <pre>
+                        <code>
+                            SimpleDateFormat format = new SimpleDateFormat( "dd.MM.yyyy" );
+                            Date date = format.parse( myString );
+                        </code>
+                    </pre>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="main-section" id="Javascript_Snippets">
+            <header id="header">
+                <h2>Javascript Snippets</h2>
+            </header>
+
+            <p>Check out some handy Javascript snippets:</p>
+            <p>Generating a Random Number</p>
+            <pre>
+                <code>
+                    let randomNum = Math.floor(Math.random() * maxNum);
+                </code>
+              </pre>
+
+
+        </section>
+
+        <section class="main-section" id="Python_Snippets">
+            <header id="header">
+                <h2>Python Snippets</h2>
+            </header>
+
+            <p>Check out some handy Python snippets:</p>
+            <p>Map a list into a dictonary</p>
+            <pre>
+                <code>
+                    mylist = ['blue', 'orange', 'green']
+                    #Map the list into a dict using the map, zip and dict functions
+                    mapped_dict = dict(zip(itr, map(fn, itr)))
+                </code>
+              </pre>
+
+
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>
